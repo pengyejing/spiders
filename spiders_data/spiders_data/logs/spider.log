@@ -1,0 +1,365 @@
+
+2018-07-23 15:48:59 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: spiders_data)
+2018-07-23 15:48:59 [scrapy.utils.log] INFO: Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 2.7.9 (default, Dec 10 2014, 12:24:55) [MSC v.1500 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-7-6.1.7601-SP1
+2018-07-23 15:48:59 [scrapy.crawler] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'spiders_data.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['spiders_data.spiders'], 'LOG_FILE': 'logs/spider.log', 'BOT_NAME': 'spiders_data', 'FEED_EXPORT_ENCODING': 'utf-8'}
+2018-07-23 15:48:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-07-23 15:49:00 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-07-23 15:49:00 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-07-23 15:49:00 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-07-23 15:49:00 [scrapy.core.engine] INFO: Spider opened
+2018-07-23 15:49:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-07-23 15:49:00 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-07-23 15:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/robots.txt> (referer: None)
+2018-07-23 15:49:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2.html> (referer: None)
+2018-07-23 15:49:19 [root] INFO: Ctrip shopping city url: http://you.ctrip.com/shopping/shanghai2.html
+2018-07-23 15:49:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/goods/shanghai2.html> (referer: http://you.ctrip.com/shopping/shanghai2.html)
+2018-07-23 15:49:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shoppinglist/shanghai2.html> (referer: http://you.ctrip.com/goods/shanghai2.html)
+2018-07-23 15:49:48 [root] INFO: last_page: 4279
+2018-07-23 15:49:48 [root] INFO: current_page: 1
+2018-07-23 15:51:55 [scrapy.extensions.logstats] INFO: Crawled 4 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2018-07-23 15:51:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1378950.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:55 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1378950.html
+2018-07-23 15:51:55 [root] INFO: name: 佛罗伦萨小镇, nameEn: Florentia Village
+2018-07-23 15:51:55 [root] DEBUG: description: 简介
+  
+                  
+                      佛罗伦萨小镇是上海首座纯意大利风格的大型高端名品折扣购物中心，与天津佛罗伦萨小镇类似，它的建筑风格都是意大利经典建筑风格，通过露天建筑群、广场、石板路、游廊拱廊、喷泉等建筑物，将令人流连忘返的的美丽景色在佛罗伦萨小镇完美呈现，打造出充满意大利风情的环境氛围，让你在上海遇见意大利！  
+  除了令人赞叹的环境，这里最重要的当然是购物，小镇有着来自意大利、欧洲、美国和中国的众多知名品牌，全年均可以平均2折起的诱人价格购买顶级名品的潮流款式，尽享无限购物乐趣。  
+  在购物和游览之余，还有数十家各国美食餐厅为您送上来自意大利以及世界各地的饕餮盛宴。贴心的客户服务，全场免费Wifi覆盖以及多种形式的会员回馈计划，定会让您的佛罗伦萨小镇购物之旅意犹未尽。  
+                  
+              
+交通信息
+  
+                  
+                      可搭乘地铁2号线至远东大道站下，小镇为方便顾客前往游览及购物，特设有短驳车（周末及节假日运行）往返远东大道地铁站与小镇。  
+                  
+              
+
+2018-07-23 15:51:55 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:55 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1378950.html>
+{'category': 'shopping', 'name': u'\u4f5b\u7f57\u4f26\u8428\u5c0f\u9547', 'url': 'http://you.ctrip.com/shopping/shanghai2/1378950.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'Florentia Village', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u4f5b\u7f57\u4f26\u8428\u5c0f\u9547\u662f\u4e0a\u6d77\u9996\u5ea7\u7eaf\u610f\u5927\u5229\u98ce\u683c\u7684\u5927\u578b\u9ad8\u7aef\u540d\u54c1\u6298\u6263\u8d2d\u7269\u4e2d\u5fc3\uff0c\u4e0e\u5929\u6d25\u4f5b\u7f57\u4f26\u8428\u5c0f\u9547\u7c7b\u4f3c\uff0c\u5b83\u7684\u5efa\u7b51\u98ce\u683c\u90fd\u662f\u610f\u5927\u5229\u7ecf\u5178\u5efa\u7b51\u98ce\u683c\uff0c\u901a\u8fc7\u9732\u5929\u5efa\u7b51\u7fa4\u3001\u5e7f\u573a\u3001\u77f3\u677f\u8def\u3001\u6e38\u5eca\u62f1\u5eca\u3001\u55b7\u6cc9\u7b49\u5efa\u7b51\u7269\uff0c\u5c06\u4ee4\u4eba\u6d41\u8fde\u5fd8\u8fd4\u7684\u7684\u7f8e\u4e3d\u666f\u8272\u5728\u4f5b\u7f57\u4f26\u8428\u5c0f\u9547\u5b8c\u7f8e\u5448\u73b0\uff0c\u6253\u9020\u51fa\u5145\u6ee1\u610f\u5927\u5229\u98ce\u60c5\u7684\u73af\u5883\u6c1b\u56f4\uff0c\u8ba9\u4f60\u5728\u4e0a\u6d77\u9047\u89c1\u610f\u5927\u5229\uff01  \n  \u9664\u4e86\u4ee4\u4eba\u8d5e\u53f9\u7684\u73af\u5883\uff0c\u8fd9\u91cc\u6700\u91cd\u8981\u7684\u5f53\u7136\u662f\u8d2d\u7269\uff0c\u5c0f\u9547\u6709\u7740\u6765\u81ea\u610f\u5927\u5229\u3001\u6b27\u6d32\u3001\u7f8e\u56fd\u548c\u4e2d\u56fd\u7684\u4f17\u591a\u77e5\u540d\u54c1\u724c\uff0c\u5168\u5e74\u5747\u53ef\u4ee5\u5e73\u57472\u6298\u8d77\u7684\u8bf1\u4eba\u4ef7\u683c\u8d2d\u4e70\u9876\u7ea7\u540d\u54c1\u7684\u6f6e\u6d41\u6b3e\u5f0f\uff0c\u5c3d\u4eab\u65e0\u9650\u8d2d\u7269\u4e50\u8da3\u3002  \n  \u5728\u8d2d\u7269\u548c\u6e38\u89c8\u4e4b\u4f59\uff0c\u8fd8\u6709\u6570\u5341\u5bb6\u5404\u56fd\u7f8e\u98df\u9910\u5385\u4e3a\u60a8\u9001\u4e0a\u6765\u81ea\u610f\u5927\u5229\u4ee5\u53ca\u4e16\u754c\u5404\u5730\u7684\u9955\u992e\u76db\u5bb4\u3002\u8d34\u5fc3\u7684\u5ba2\u6237\u670d\u52a1\uff0c\u5168\u573a\u514d\u8d39Wifi\u8986\u76d6\u4ee5\u53ca\u591a\u79cd\u5f62\u5f0f\u7684\u4f1a\u5458\u56de\u9988\u8ba1\u5212\uff0c\u5b9a\u4f1a\u8ba9\u60a8\u7684\u4f5b\u7f57\u4f26\u8428\u5c0f\u9547\u8d2d\u7269\u4e4b\u65c5\u610f\u72b9\u672a\u5c3d\u3002  \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u53ef\u642d\u4e58\u5730\u94c12\u53f7\u7ebf\u81f3\u8fdc\u4e1c\u5927\u9053\u7ad9\u4e0b\uff0c\u5c0f\u9547\u4e3a\u65b9\u4fbf\u987e\u5ba2\u524d\u5f80\u6e38\u89c8\u53ca\u8d2d\u7269\uff0c\u7279\u8bbe\u6709\u77ed\u9a73\u8f66\uff08\u5468\u672b\u53ca\u8282\u5047\u65e5\u8fd0\u884c\uff09\u5f80\u8fd4\u8fdc\u4e1c\u5927\u9053\u5730\u94c1\u7ad9\u4e0e\u5c0f\u9547\u3002  \r\n                  \r\n              \n'}
+2018-07-23 15:51:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1450411.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1456312.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1450411.html
+2018-07-23 15:51:56 [root] INFO: name: 上海奕欧来奥特莱斯, nameEn: 
+2018-07-23 15:51:56 [root] DEBUG: description: 简介
+  
+                  
+                      上海奕欧来奥特莱斯位于上海国际旅游度假区内，地处浦东新区核心地带，毗邻上海迪士尼度假区。上海奕欧来奥特莱斯占地55,000平方米，由三栋面湖而立的新月型建筑构成，整洁优雅，彷佛一个精致的欧式度假园区。无需长途飞行，便可在此尽享纯正欧洲奥莱的异国风情与精致体验。穿越林荫道，人们就能够欣赏到源于上世纪二十年代遍布于纽约、巴黎、米兰、维也纳及上海的装饰艺术风格建筑。这里每一条街道都以一位装饰艺术主义领袖的名字命名。奕欧来上海奥特莱斯目前聚集超过100间精品品牌店铺入驻，全部采用了国际最高设计标准建造，为国内外及上海周边地区的数百万名游客创造出一个非同凡响的购物天堂。   
+                  
+              
+交通信息
+  
+                  
+                        乘坐地铁11号线至迪士尼站，搭乘接驳巴士，仅需5分钟即可到达。    
+                  
+              
+
+2018-07-23 15:51:56 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1450411.html>
+{'category': 'shopping', 'name': u'\u4e0a\u6d77\u5955\u6b27\u6765\u5965\u7279\u83b1\u65af', 'url': 'http://you.ctrip.com/shopping/shanghai2/1450411.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u4e0a\u6d77\u5955\u6b27\u6765\u5965\u7279\u83b1\u65af\u4f4d\u4e8e\u4e0a\u6d77\u56fd\u9645\u65c5\u6e38\u5ea6\u5047\u533a\u5185\uff0c\u5730\u5904\u6d66\u4e1c\u65b0\u533a\u6838\u5fc3\u5730\u5e26\uff0c\u6bd7\u90bb\u4e0a\u6d77\u8fea\u58eb\u5c3c\u5ea6\u5047\u533a\u3002\u4e0a\u6d77\u5955\u6b27\u6765\u5965\u7279\u83b1\u65af\u5360\u573055,000\u5e73\u65b9\u7c73\uff0c\u7531\u4e09\u680b\u9762\u6e56\u800c\u7acb\u7684\u65b0\u6708\u578b\u5efa\u7b51\u6784\u6210\uff0c\u6574\u6d01\u4f18\u96c5\uff0c\u5f77\u4f5b\u4e00\u4e2a\u7cbe\u81f4\u7684\u6b27\u5f0f\u5ea6\u5047\u56ed\u533a\u3002\u65e0\u9700\u957f\u9014\u98de\u884c\uff0c\u4fbf\u53ef\u5728\u6b64\u5c3d\u4eab\u7eaf\u6b63\u6b27\u6d32\u5965\u83b1\u7684\u5f02\u56fd\u98ce\u60c5\u4e0e\u7cbe\u81f4\u4f53\u9a8c\u3002\u7a7f\u8d8a\u6797\u836b\u9053\uff0c\u4eba\u4eec\u5c31\u80fd\u591f\u6b23\u8d4f\u5230\u6e90\u4e8e\u4e0a\u4e16\u7eaa\u4e8c\u5341\u5e74\u4ee3\u904d\u5e03\u4e8e\u7ebd\u7ea6\u3001\u5df4\u9ece\u3001\u7c73\u5170\u3001\u7ef4\u4e5f\u7eb3\u53ca\u4e0a\u6d77\u7684\u88c5\u9970\u827a\u672f\u98ce\u683c\u5efa\u7b51\u3002\u8fd9\u91cc\u6bcf\u4e00\u6761\u8857\u9053\u90fd\u4ee5\u4e00\u4f4d\u88c5\u9970\u827a\u672f\u4e3b\u4e49\u9886\u8896\u7684\u540d\u5b57\u547d\u540d\u3002\u5955\u6b27\u6765\u4e0a\u6d77\u5965\u7279\u83b1\u65af\u76ee\u524d\u805a\u96c6\u8d85\u8fc7100\u95f4\u7cbe\u54c1\u54c1\u724c\u5e97\u94fa\u5165\u9a7b\uff0c\u5168\u90e8\u91c7\u7528\u4e86\u56fd\u9645\u6700\u9ad8\u8bbe\u8ba1\u6807\u51c6\u5efa\u9020\uff0c\u4e3a\u56fd\u5185\u5916\u53ca\u4e0a\u6d77\u5468\u8fb9\u5730\u533a\u7684\u6570\u767e\u4e07\u540d\u6e38\u5ba2\u521b\u9020\u51fa\u4e00\u4e2a\u975e\u540c\u51e1\u54cd\u7684\u8d2d\u7269\u5929\u5802\u3002   \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                        \u4e58\u5750\u5730\u94c111\u53f7\u7ebf\u81f3\u8fea\u58eb\u5c3c\u7ad9\uff0c\u642d\u4e58\u63a5\u9a73\u5df4\u58eb\uff0c\u4ec5\u97005\u5206\u949f\u5373\u53ef\u5230\u8fbe\u3002    \r\n                  \r\n              \n'}
+2018-07-23 15:51:56 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1456312.html
+2018-07-23 15:51:56 [root] INFO: name: 周大福（上海迪士尼小镇珠宝专业店）, nameEn: Chow Tai Fook
+2018-07-23 15:51:56 [root] DEBUG: description: 简介
+  
+                  
+                      周大福珠宝集团有限公司，于2011年12月在香港联合交易所主板上市，集团拥有庞大的零售网络，包括逾2,250个遍布大中华区、新加坡、马来西亚、南韩与美国的周大福及Hearts On Fire零售点，覆盖500个城市，以及电子商务网络。  
+                  
+              
+交通信息
+  
+                  
+                      乘坐地铁11号线至迪士尼站下，步行即可到达。  
+                  
+              
+
+2018-07-23 15:51:56 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1456312.html>
+{'category': 'shopping', 'name': u'\u5468\u5927\u798f\uff08\u4e0a\u6d77\u8fea\u58eb\u5c3c\u5c0f\u9547\u73e0\u5b9d\u4e13\u4e1a\u5e97\uff09', 'url': 'http://you.ctrip.com/shopping/shanghai2/1456312.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'Chow Tai Fook', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u5468\u5927\u798f\u73e0\u5b9d\u96c6\u56e2\u6709\u9650\u516c\u53f8\uff0c\u4e8e2011\u5e7412\u6708\u5728\u9999\u6e2f\u8054\u5408\u4ea4\u6613\u6240\u4e3b\u677f\u4e0a\u5e02\uff0c\u96c6\u56e2\u62e5\u6709\u5e9e\u5927\u7684\u96f6\u552e\u7f51\u7edc\uff0c\u5305\u62ec\u903e2,250\u4e2a\u904d\u5e03\u5927\u4e2d\u534e\u533a\u3001\u65b0\u52a0\u5761\u3001\u9a6c\u6765\u897f\u4e9a\u3001\u5357\u97e9\u4e0e\u7f8e\u56fd\u7684\u5468\u5927\u798f\u53caHearts On Fire\u96f6\u552e\u70b9\uff0c\u8986\u76d6500\u4e2a\u57ce\u5e02\uff0c\u4ee5\u53ca\u7535\u5b50\u5546\u52a1\u7f51\u7edc\u3002  \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u4e58\u5750\u5730\u94c111\u53f7\u7ebf\u81f3\u8fea\u58eb\u5c3c\u7ad9\u4e0b\uff0c\u6b65\u884c\u5373\u53ef\u5230\u8fbe\u3002  \r\n                  \r\n              \n'}
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1361516.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/109368.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/3739.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1361516.html
+2018-07-23 15:51:56 [root] INFO: name: K11购物艺术中心, nameEn: 
+2018-07-23 15:51:56 [root] DEBUG: description: 简介
+  
+                  
+                      K11购物艺术中心是首个把艺术·人文·自然三大核心元素融合的全球性原创品牌，上海K11坐落于淮海路的黄金地带，  现在是上海文艺青年和时尚青年的聚集地  。  
+    上海K11全力打造最大的互动艺术乐园、最具舞台感的购物体验、最潮的多元文化社区枢纽，不仅长期展示国内年轻艺术家的艺术作品，更有365天的不间断互动活动，购物的同时更是艺术的享受。商场内可以找到各种潮流品牌，Elle、时尚芭莎等时尚杂志推荐的潮品，明星同款都是K11的宠儿。    
+    K11的楼顶被改造成了“都市农庄”，你还可以在此互动体验的现实版“开心农场”哦。    
+                  
+              
+交通信息
+  
+                  
+                      乘坐地铁1号线至黄陂南路站，步行即到。  
+                  
+              
+
+2018-07-23 15:51:56 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1361516.html>
+{'category': 'shopping', 'name': u'K11\u8d2d\u7269\u827a\u672f\u4e2d\u5fc3', 'url': 'http://you.ctrip.com/shopping/shanghai2/1361516.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      K11\u8d2d\u7269\u827a\u672f\u4e2d\u5fc3\u662f\u9996\u4e2a\u628a\u827a\u672f\xb7\u4eba\u6587\xb7\u81ea\u7136\u4e09\u5927\u6838\u5fc3\u5143\u7d20\u878d\u5408\u7684\u5168\u7403\u6027\u539f\u521b\u54c1\u724c\uff0c\u4e0a\u6d77K11\u5750\u843d\u4e8e\u6dee\u6d77\u8def\u7684\u9ec4\u91d1\u5730\u5e26\uff0c  \u73b0\u5728\u662f\u4e0a\u6d77\u6587\u827a\u9752\u5e74\u548c\u65f6\u5c1a\u9752\u5e74\u7684\u805a\u96c6\u5730  \u3002  \n    \u4e0a\u6d77K11\u5168\u529b\u6253\u9020\u6700\u5927\u7684\u4e92\u52a8\u827a\u672f\u4e50\u56ed\u3001\u6700\u5177\u821e\u53f0\u611f\u7684\u8d2d\u7269\u4f53\u9a8c\u3001\u6700\u6f6e\u7684\u591a\u5143\u6587\u5316\u793e\u533a\u67a2\u7ebd\uff0c\u4e0d\u4ec5\u957f\u671f\u5c55\u793a\u56fd\u5185\u5e74\u8f7b\u827a\u672f\u5bb6\u7684\u827a\u672f\u4f5c\u54c1\uff0c\u66f4\u6709365\u5929\u7684\u4e0d\u95f4\u65ad\u4e92\u52a8\u6d3b\u52a8\uff0c\u8d2d\u7269\u7684\u540c\u65f6\u66f4\u662f\u827a\u672f\u7684\u4eab\u53d7\u3002\u5546\u573a\u5185\u53ef\u4ee5\u627e\u5230\u5404\u79cd\u6f6e\u6d41\u54c1\u724c\uff0cElle\u3001\u65f6\u5c1a\u82ad\u838e\u7b49\u65f6\u5c1a\u6742\u5fd7\u63a8\u8350\u7684\u6f6e\u54c1\uff0c\u660e\u661f\u540c\u6b3e\u90fd\u662fK11\u7684\u5ba0\u513f\u3002    \n    K11\u7684\u697c\u9876\u88ab\u6539\u9020\u6210\u4e86\u201c\u90fd\u5e02\u519c\u5e84\u201d\uff0c\u4f60\u8fd8\u53ef\u4ee5\u5728\u6b64\u4e92\u52a8\u4f53\u9a8c\u7684\u73b0\u5b9e\u7248\u201c\u5f00\u5fc3\u519c\u573a\u201d\u54e6\u3002    \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u4e58\u5750\u5730\u94c11\u53f7\u7ebf\u81f3\u9ec4\u9642\u5357\u8def\u7ad9\uff0c\u6b65\u884c\u5373\u5230\u3002  \r\n                  \r\n              \n'}
+2018-07-23 15:51:56 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/109368.html
+2018-07-23 15:51:56 [root] INFO: name: 正大广场, nameEn: Super Brand Mall
+2018-07-23 15:51:56 [root] DEBUG: description: 简介
+  
+                  
+                      正大广场坐落在黄浦江畔的陆家嘴金融中心，毗邻东方明珠、金茂大厦、环球金融中心等热门景点，广场外的天桥上可以清晰地看到陆家嘴金融中心的高楼大厦，是摄影拍照的好去处。  
+  正大广场规模较大，整个广场内集中了1000多种国际国内品牌，还有各类餐饮和影院入驻其中，综合了吃喝玩乐，有电影院和电玩中心，是休闲购物的好去处。  
+                  
+              
+交通信息
+  
+                  
+                      乘坐地铁2号线至陆家嘴站，步行即可到达。  
+                  
+              
+
+2018-07-23 15:51:56 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/109368.html>
+{'category': 'shopping', 'name': u'\u6b63\u5927\u5e7f\u573a', 'url': 'http://you.ctrip.com/shopping/shanghai2/109368.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'Super Brand Mall', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u6b63\u5927\u5e7f\u573a\u5750\u843d\u5728\u9ec4\u6d66\u6c5f\u7554\u7684\u9646\u5bb6\u5634\u91d1\u878d\u4e2d\u5fc3\uff0c\u6bd7\u90bb\u4e1c\u65b9\u660e\u73e0\u3001\u91d1\u8302\u5927\u53a6\u3001\u73af\u7403\u91d1\u878d\u4e2d\u5fc3\u7b49\u70ed\u95e8\u666f\u70b9\uff0c\u5e7f\u573a\u5916\u7684\u5929\u6865\u4e0a\u53ef\u4ee5\u6e05\u6670\u5730\u770b\u5230\u9646\u5bb6\u5634\u91d1\u878d\u4e2d\u5fc3\u7684\u9ad8\u697c\u5927\u53a6\uff0c\u662f\u6444\u5f71\u62cd\u7167\u7684\u597d\u53bb\u5904\u3002  \n  \u6b63\u5927\u5e7f\u573a\u89c4\u6a21\u8f83\u5927\uff0c\u6574\u4e2a\u5e7f\u573a\u5185\u96c6\u4e2d\u4e861000\u591a\u79cd\u56fd\u9645\u56fd\u5185\u54c1\u724c\uff0c\u8fd8\u6709\u5404\u7c7b\u9910\u996e\u548c\u5f71\u9662\u5165\u9a7b\u5176\u4e2d\uff0c\u7efc\u5408\u4e86\u5403\u559d\u73a9\u4e50\uff0c\u6709\u7535\u5f71\u9662\u548c\u7535\u73a9\u4e2d\u5fc3\uff0c\u662f\u4f11\u95f2\u8d2d\u7269\u7684\u597d\u53bb\u5904\u3002  \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u4e58\u5750\u5730\u94c12\u53f7\u7ebf\u81f3\u9646\u5bb6\u5634\u7ad9\uff0c\u6b65\u884c\u5373\u53ef\u5230\u8fbe\u3002  \r\n                  \r\n              \n'}
+2018-07-23 15:51:56 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/3739.html
+2018-07-23 15:51:56 [root] INFO: name: 南京路步行街, nameEn: 
+2018-07-23 15:51:56 [scrapy.core.scraper] ERROR: Spider error processing <GET http://you.ctrip.com/shopping/shanghai2/3739.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+Traceback (most recent call last):
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\soft\Python\workspace\spiders_data\spiders_data\spiders\ctrip_shopping.py", line 52, in restaurant_detail
+    content = dr.sub('  ', content)
+TypeError: expected string or buffer
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/109303.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1357471.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1357571.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/109303.html
+2018-07-23 15:51:56 [root] INFO: name: 久光百货, nameEn: 
+2018-07-23 15:51:56 [root] DEBUG: description: 简介
+  
+                  
+                      久光百货位于静安寺旁边，交通便利。这家综合百货商场有地下一层和地上九层，地下一层的新鲜馆，汇集了琳琅满目的进口食品，尤其是众多具有日本特色的食品，更有日本最著名的茶叶品牌福寿园在上海的唯一店铺。  
+  一楼汇集了世界一线的化妆品和欧美大牌转卖店，二楼以珠宝首饰为主，三楼至六楼主要出售服饰、箱包、儿童用品等。七楼设有一个特卖会场，许多知名品牌折扣力度较大，几年来经久不衰。  
+    
+                  
+              
+交通信息
+  
+                  
+                      乘坐地铁2、7号线至静安寺站，步行即可到达。  
+                  
+              
+
+2018-07-23 15:51:56 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/109303.html>
+{'category': 'shopping', 'name': u'\u4e45\u5149\u767e\u8d27', 'url': 'http://you.ctrip.com/shopping/shanghai2/109303.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u4e45\u5149\u767e\u8d27\u4f4d\u4e8e\u9759\u5b89\u5bfa\u65c1\u8fb9\uff0c\u4ea4\u901a\u4fbf\u5229\u3002\u8fd9\u5bb6\u7efc\u5408\u767e\u8d27\u5546\u573a\u6709\u5730\u4e0b\u4e00\u5c42\u548c\u5730\u4e0a\u4e5d\u5c42\uff0c\u5730\u4e0b\u4e00\u5c42\u7684\u65b0\u9c9c\u9986\uff0c\u6c47\u96c6\u4e86\u7433\u7405\u6ee1\u76ee\u7684\u8fdb\u53e3\u98df\u54c1\uff0c\u5c24\u5176\u662f\u4f17\u591a\u5177\u6709\u65e5\u672c\u7279\u8272\u7684\u98df\u54c1\uff0c\u66f4\u6709\u65e5\u672c\u6700\u8457\u540d\u7684\u8336\u53f6\u54c1\u724c\u798f\u5bff\u56ed\u5728\u4e0a\u6d77\u7684\u552f\u4e00\u5e97\u94fa\u3002  \n  \u4e00\u697c\u6c47\u96c6\u4e86\u4e16\u754c\u4e00\u7ebf\u7684\u5316\u5986\u54c1\u548c\u6b27\u7f8e\u5927\u724c\u8f6c\u5356\u5e97\uff0c\u4e8c\u697c\u4ee5\u73e0\u5b9d\u9996\u9970\u4e3a\u4e3b\uff0c\u4e09\u697c\u81f3\u516d\u697c\u4e3b\u8981\u51fa\u552e\u670d\u9970\u3001\u7bb1\u5305\u3001\u513f\u7ae5\u7528\u54c1\u7b49\u3002\u4e03\u697c\u8bbe\u6709\u4e00\u4e2a\u7279\u5356\u4f1a\u573a\uff0c\u8bb8\u591a\u77e5\u540d\u54c1\u724c\u6298\u6263\u529b\u5ea6\u8f83\u5927\uff0c\u51e0\u5e74\u6765\u7ecf\u4e45\u4e0d\u8870\u3002  \n    \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u4e58\u5750\u5730\u94c12\u30017\u53f7\u7ebf\u81f3\u9759\u5b89\u5bfa\u7ad9\uff0c\u6b65\u884c\u5373\u53ef\u5230\u8fbe\u3002  \r\n                  \r\n              \n'}
+2018-07-23 15:51:56 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1357471.html
+2018-07-23 15:51:56 [root] INFO: name: 第一百货商业中心(南京东路店), nameEn: Shanghai NO.1 Department Store
+2018-07-23 15:51:56 [root] DEBUG: description: 简介
+  
+                  
+                      坐落于中华第一街南京路步行街上的上海市第一百货商店是建国后的第一家国有百货零售企业，共有八个楼面，主要经营日用百货、服装、针棉织品、皮具鞋类、家具等大类4万余种的商品。这里汇集了雅戈尔、开开、周大福、天堂伞等经典老品牌，商场7楼经常举办羽绒服特卖会，可以淘到不少便宜的好货。  
+                  
+              
+交通信息
+  
+                  
+                      乘坐地铁1、2、8号线至人民广场站，步行即可到达。  
+                  
+              
+
+2018-07-23 15:51:56 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1357471.html>
+{'category': 'shopping', 'name': u'\u7b2c\u4e00\u767e\u8d27\u5546\u4e1a\u4e2d\u5fc3(\u5357\u4eac\u4e1c\u8def\u5e97)', 'url': 'http://you.ctrip.com/shopping/shanghai2/1357471.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'Shanghai NO.1 Department Store', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u5750\u843d\u4e8e\u4e2d\u534e\u7b2c\u4e00\u8857\u5357\u4eac\u8def\u6b65\u884c\u8857\u4e0a\u7684\u4e0a\u6d77\u5e02\u7b2c\u4e00\u767e\u8d27\u5546\u5e97\u662f\u5efa\u56fd\u540e\u7684\u7b2c\u4e00\u5bb6\u56fd\u6709\u767e\u8d27\u96f6\u552e\u4f01\u4e1a\uff0c\u5171\u6709\u516b\u4e2a\u697c\u9762\uff0c\u4e3b\u8981\u7ecf\u8425\u65e5\u7528\u767e\u8d27\u3001\u670d\u88c5\u3001\u9488\u68c9\u7ec7\u54c1\u3001\u76ae\u5177\u978b\u7c7b\u3001\u5bb6\u5177\u7b49\u5927\u7c7b4\u4e07\u4f59\u79cd\u7684\u5546\u54c1\u3002\u8fd9\u91cc\u6c47\u96c6\u4e86\u96c5\u6208\u5c14\u3001\u5f00\u5f00\u3001\u5468\u5927\u798f\u3001\u5929\u5802\u4f1e\u7b49\u7ecf\u5178\u8001\u54c1\u724c\uff0c\u5546\u573a7\u697c\u7ecf\u5e38\u4e3e\u529e\u7fbd\u7ed2\u670d\u7279\u5356\u4f1a\uff0c\u53ef\u4ee5\u6dd8\u5230\u4e0d\u5c11\u4fbf\u5b9c\u7684\u597d\u8d27\u3002  \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u4e58\u5750\u5730\u94c11\u30012\u30018\u53f7\u7ebf\u81f3\u4eba\u6c11\u5e7f\u573a\u7ad9\uff0c\u6b65\u884c\u5373\u53ef\u5230\u8fbe\u3002  \r\n                  \r\n              \n'}
+2018-07-23 15:51:56 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1357571.html
+2018-07-23 15:51:56 [root] INFO: name: 上海大悦城, nameEn: Shanghai Joy City
+2018-07-23 15:51:56 [root] DEBUG: description: 简介
+  
+                  
+                        上海大悦城地处苏河湾地区，毗邻南京东路商圈，地理位置优越    。大悦城外形时尚现代，格局清晰有致。商场集餐饮、购物、娱乐为一体，品牌丰富，经常会举办一些展览活动。现在已成为了上海地区最具科技感、潮流风的购物中心之一。    
+    最具特色的还要数楼顶上国内首个悬臂式屋顶摩天轮“Sky Ring”，  直径56米，距离地面98米，拥有30个极具时尚感的白色轿舱，在上面可以俯瞰上海景色。摩天轮还  结合了  高科技互动装置，可以在此体验到  置身巴黎、爱情海和普罗旺斯的感觉。还能在摩天轮上享用浪漫的烛光晚餐或精致的下午茶。        
+                  
+              
+交通信息
+  
+                  
+                      乘坐地铁8、12号线至曲阜路站，，步行即到。  
+                  
+              
+特别提示
+  
+                  
+                        1. Sky Ring开放时间：10:00-21:30    
+    2. Sky Ring普通票：周一-周五60元（单人）、周末及节假日80元（单人）；  下午茶套餐票：298元（双人），可搭乘2圈摩天轮，同时品尝由雕爷牛腩旗下的“皮娜鲍什”品牌提供的下午茶套餐，开放时间：10:00-18:00；  夜色大餐票：A套餐  1314元（双人）、B套餐  999元（双人），可搭乘7圈摩天轮，同时品尝由皮娜鲍什独家定制的摩天轮大餐，限量发售，需要提前预定，详见官网。        
+                  
+              
+
+2018-07-23 15:51:56 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1357571.html>
+{'category': 'shopping', 'name': u'\u4e0a\u6d77\u5927\u60a6\u57ce', 'url': 'http://you.ctrip.com/shopping/shanghai2/1357571.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'Shanghai Joy City', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                        \u4e0a\u6d77\u5927\u60a6\u57ce\u5730\u5904\u82cf\u6cb3\u6e7e\u5730\u533a\uff0c\u6bd7\u90bb\u5357\u4eac\u4e1c\u8def\u5546\u5708\uff0c\u5730\u7406\u4f4d\u7f6e\u4f18\u8d8a    \u3002\u5927\u60a6\u57ce\u5916\u5f62\u65f6\u5c1a\u73b0\u4ee3\uff0c\u683c\u5c40\u6e05\u6670\u6709\u81f4\u3002\u5546\u573a\u96c6\u9910\u996e\u3001\u8d2d\u7269\u3001\u5a31\u4e50\u4e3a\u4e00\u4f53\uff0c\u54c1\u724c\u4e30\u5bcc\uff0c\u7ecf\u5e38\u4f1a\u4e3e\u529e\u4e00\u4e9b\u5c55\u89c8\u6d3b\u52a8\u3002\u73b0\u5728\u5df2\u6210\u4e3a\u4e86\u4e0a\u6d77\u5730\u533a\u6700\u5177\u79d1\u6280\u611f\u3001\u6f6e\u6d41\u98ce\u7684\u8d2d\u7269\u4e2d\u5fc3\u4e4b\u4e00\u3002    \n    \u6700\u5177\u7279\u8272\u7684\u8fd8\u8981\u6570\u697c\u9876\u4e0a\u56fd\u5185\u9996\u4e2a\u60ac\u81c2\u5f0f\u5c4b\u9876\u6469\u5929\u8f6e\u201cSky Ring\u201d\uff0c  \u76f4\u5f8456\u7c73\uff0c\u8ddd\u79bb\u5730\u976298\u7c73\uff0c\u62e5\u670930\u4e2a\u6781\u5177\u65f6\u5c1a\u611f\u7684\u767d\u8272\u8f7f\u8231\uff0c\u5728\u4e0a\u9762\u53ef\u4ee5\u4fef\u77b0\u4e0a\u6d77\u666f\u8272\u3002\u6469\u5929\u8f6e\u8fd8  \u7ed3\u5408\u4e86  \u9ad8\u79d1\u6280\u4e92\u52a8\u88c5\u7f6e\uff0c\u53ef\u4ee5\u5728\u6b64\u4f53\u9a8c\u5230  \u7f6e\u8eab\u5df4\u9ece\u3001\u7231\u60c5\u6d77\u548c\u666e\u7f57\u65fa\u65af\u7684\u611f\u89c9\u3002\u8fd8\u80fd\u5728\u6469\u5929\u8f6e\u4e0a\u4eab\u7528\u6d6a\u6f2b\u7684\u70db\u5149\u665a\u9910\u6216\u7cbe\u81f4\u7684\u4e0b\u5348\u8336\u3002        \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u4e58\u5750\u5730\u94c18\u300112\u53f7\u7ebf\u81f3\u66f2\u961c\u8def\u7ad9\uff0c\uff0c\u6b65\u884c\u5373\u5230\u3002  \r\n                  \r\n              \n\u7279\u522b\u63d0\u793a\n  \r\n                  \r\n                        1. Sky Ring\u5f00\u653e\u65f6\u95f4\uff1a10:00-21:30    \n    2. Sky Ring\u666e\u901a\u7968\uff1a\u5468\u4e00-\u5468\u4e9460\u5143\uff08\u5355\u4eba\uff09\u3001\u5468\u672b\u53ca\u8282\u5047\u65e580\u5143\uff08\u5355\u4eba\uff09\uff1b  \u4e0b\u5348\u8336\u5957\u9910\u7968\uff1a298\u5143\uff08\u53cc\u4eba\uff09\uff0c\u53ef\u642d\u4e582\u5708\u6469\u5929\u8f6e\uff0c\u540c\u65f6\u54c1\u5c1d\u7531\u96d5\u7237\u725b\u8169\u65d7\u4e0b\u7684\u201c\u76ae\u5a1c\u9c8d\u4ec0\u201d\u54c1\u724c\u63d0\u4f9b\u7684\u4e0b\u5348\u8336\u5957\u9910\uff0c\u5f00\u653e\u65f6\u95f4\uff1a10:00-18:00\uff1b  \u591c\u8272\u5927\u9910\u7968\uff1aA\u5957\u9910  1314\u5143\uff08\u53cc\u4eba\uff09\u3001B\u5957\u9910  999\u5143\uff08\u53cc\u4eba\uff09\uff0c\u53ef\u642d\u4e587\u5708\u6469\u5929\u8f6e\uff0c\u540c\u65f6\u54c1\u5c1d\u7531\u76ae\u5a1c\u9c8d\u4ec0\u72ec\u5bb6\u5b9a\u5236\u7684\u6469\u5929\u8f6e\u5927\u9910\uff0c\u9650\u91cf\u53d1\u552e\uff0c\u9700\u8981\u63d0\u524d\u9884\u5b9a\uff0c\u8be6\u89c1\u5b98\u7f51\u3002        \r\n                  \r\n              \n'}
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1362461.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1362461.html
+2018-07-23 15:51:56 [root] INFO: name: 月星环球港, nameEn: Global Harbour
+2018-07-23 15:51:56 [root] DEBUG: description: 简介
+  
+                  
+                      上海月星环球港是国内唯一欧式风格的Shopping Mall，也是全球中心城区最大的购物中心。商场将现代设计元素融入了欧式建筑风格中，中庭造型把原本宏伟的建筑塑造的错落有致、层次分明。在这里购物，足不出户便可以感受到国外的购物文化与时尚。  
+    环球港除了诸多大众青睐的世界知名品牌外，二楼  则以设计师品牌为主，结合主力店，展现当下最新的潮流趋势。  五楼是上海目前最大的屋顶花园广场，还别具新格设有一个富有情调的汽车电影院，时尚前卫。    
+                  
+              
+交通信息
+  
+                  
+                      乘坐地铁3、4、13号线至金沙江路站，步行即可到达。  
+  乘坐公交44、67、69、224、829、909路等均可到达。  
+                  
+              
+特别提示
+  
+                  
+                        本商场停车费为10元/1小时，会员可凭卡内积分兑换免费停车券，500分兑换1小时，单日最高兑换3小时，可至各礼宾台及客服中心办理    
+                  
+              
+
+2018-07-23 15:51:56 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:56 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1362461.html>
+{'category': 'shopping', 'name': u'\u6708\u661f\u73af\u7403\u6e2f', 'url': 'http://you.ctrip.com/shopping/shanghai2/1362461.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'Global Harbour', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u4e0a\u6d77\u6708\u661f\u73af\u7403\u6e2f\u662f\u56fd\u5185\u552f\u4e00\u6b27\u5f0f\u98ce\u683c\u7684Shopping Mall\uff0c\u4e5f\u662f\u5168\u7403\u4e2d\u5fc3\u57ce\u533a\u6700\u5927\u7684\u8d2d\u7269\u4e2d\u5fc3\u3002\u5546\u573a\u5c06\u73b0\u4ee3\u8bbe\u8ba1\u5143\u7d20\u878d\u5165\u4e86\u6b27\u5f0f\u5efa\u7b51\u98ce\u683c\u4e2d\uff0c\u4e2d\u5ead\u9020\u578b\u628a\u539f\u672c\u5b8f\u4f1f\u7684\u5efa\u7b51\u5851\u9020\u7684\u9519\u843d\u6709\u81f4\u3001\u5c42\u6b21\u5206\u660e\u3002\u5728\u8fd9\u91cc\u8d2d\u7269\uff0c\u8db3\u4e0d\u51fa\u6237\u4fbf\u53ef\u4ee5\u611f\u53d7\u5230\u56fd\u5916\u7684\u8d2d\u7269\u6587\u5316\u4e0e\u65f6\u5c1a\u3002  \n    \u73af\u7403\u6e2f\u9664\u4e86\u8bf8\u591a\u5927\u4f17\u9752\u7750\u7684\u4e16\u754c\u77e5\u540d\u54c1\u724c\u5916\uff0c\u4e8c\u697c  \u5219\u4ee5\u8bbe\u8ba1\u5e08\u54c1\u724c\u4e3a\u4e3b\uff0c\u7ed3\u5408\u4e3b\u529b\u5e97\uff0c\u5c55\u73b0\u5f53\u4e0b\u6700\u65b0\u7684\u6f6e\u6d41\u8d8b\u52bf\u3002  \u4e94\u697c\u662f\u4e0a\u6d77\u76ee\u524d\u6700\u5927\u7684\u5c4b\u9876\u82b1\u56ed\u5e7f\u573a\uff0c\u8fd8\u522b\u5177\u65b0\u683c\u8bbe\u6709\u4e00\u4e2a\u5bcc\u6709\u60c5\u8c03\u7684\u6c7d\u8f66\u7535\u5f71\u9662\uff0c\u65f6\u5c1a\u524d\u536b\u3002    \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u4e58\u5750\u5730\u94c13\u30014\u300113\u53f7\u7ebf\u81f3\u91d1\u6c99\u6c5f\u8def\u7ad9\uff0c\u6b65\u884c\u5373\u53ef\u5230\u8fbe\u3002  \n  \u4e58\u5750\u516c\u4ea444\u300167\u300169\u3001224\u3001829\u3001909\u8def\u7b49\u5747\u53ef\u5230\u8fbe\u3002  \r\n                  \r\n              \n\u7279\u522b\u63d0\u793a\n  \r\n                  \r\n                        \u672c\u5546\u573a\u505c\u8f66\u8d39\u4e3a10\u5143/1\u5c0f\u65f6\uff0c\u4f1a\u5458\u53ef\u51ed\u5361\u5185\u79ef\u5206\u5151\u6362\u514d\u8d39\u505c\u8f66\u5238\uff0c500\u5206\u5151\u63621\u5c0f\u65f6\uff0c\u5355\u65e5\u6700\u9ad8\u5151\u63623\u5c0f\u65f6\uff0c\u53ef\u81f3\u5404\u793c\u5bbe\u53f0\u53ca\u5ba2\u670d\u4e2d\u5fc3\u529e\u7406    \r\n                  \r\n              \n'}
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1456319.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/5691.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1360525.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:57 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1456319.html
+2018-07-23 15:51:57 [root] INFO: name: 日上免税行（上海浦东国际机场T1航站楼店）, nameEn: SUNRISE DUTY FREE（Shanghai Pudong International Airport T1）
+2018-07-23 15:51:57 [root] DEBUG: description: 简介
+  
+                  
+                      日上免税行是经中国政府批准的经营机场免税店的专业机构。经营的事业分布在两大门户机场：- 北京首都国际机场（T2和T3航站楼）- 上海浦东国际机场（T1、T2）- 上海虹桥国际机场（T1航站楼）精选来自全球的著名奢侈品牌免税系列商品。  
+  位于上海浦东国际机场T1航站楼的日上免税行位于过出境口之后的15-24登机口附近，入境口旁也有一家，主要经营  包括烟酒食品、香水、护肤品、彩妆、精品店铺等在内的商品  。  
+                  
+              
+
+2018-07-23 15:51:57 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1456319.html>
+{'category': 'shopping', 'name': u'\u65e5\u4e0a\u514d\u7a0e\u884c\uff08\u4e0a\u6d77\u6d66\u4e1c\u56fd\u9645\u673a\u573aT1\u822a\u7ad9\u697c\u5e97\uff09', 'url': 'http://you.ctrip.com/shopping/shanghai2/1456319.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'SUNRISE DUTY FREE\uff08Shanghai Pudong International Airport T1\uff09', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u65e5\u4e0a\u514d\u7a0e\u884c\u662f\u7ecf\u4e2d\u56fd\u653f\u5e9c\u6279\u51c6\u7684\u7ecf\u8425\u673a\u573a\u514d\u7a0e\u5e97\u7684\u4e13\u4e1a\u673a\u6784\u3002\u7ecf\u8425\u7684\u4e8b\u4e1a\u5206\u5e03\u5728\u4e24\u5927\u95e8\u6237\u673a\u573a\uff1a- \u5317\u4eac\u9996\u90fd\u56fd\u9645\u673a\u573a\uff08T2\u548cT3\u822a\u7ad9\u697c\uff09- \u4e0a\u6d77\u6d66\u4e1c\u56fd\u9645\u673a\u573a\uff08T1\u3001T2\uff09- \u4e0a\u6d77\u8679\u6865\u56fd\u9645\u673a\u573a\uff08T1\u822a\u7ad9\u697c\uff09\u7cbe\u9009\u6765\u81ea\u5168\u7403\u7684\u8457\u540d\u5962\u4f88\u54c1\u724c\u514d\u7a0e\u7cfb\u5217\u5546\u54c1\u3002  \n  \u4f4d\u4e8e\u4e0a\u6d77\u6d66\u4e1c\u56fd\u9645\u673a\u573aT1\u822a\u7ad9\u697c\u7684\u65e5\u4e0a\u514d\u7a0e\u884c\u4f4d\u4e8e\u8fc7\u51fa\u5883\u53e3\u4e4b\u540e\u768415-24\u767b\u673a\u53e3\u9644\u8fd1\uff0c\u5165\u5883\u53e3\u65c1\u4e5f\u6709\u4e00\u5bb6\uff0c\u4e3b\u8981\u7ecf\u8425  \u5305\u62ec\u70df\u9152\u98df\u54c1\u3001\u9999\u6c34\u3001\u62a4\u80a4\u54c1\u3001\u5f69\u5986\u3001\u7cbe\u54c1\u5e97\u94fa\u7b49\u5728\u5185\u7684\u5546\u54c1  \u3002  \r\n                  \r\n              \n'}
+2018-07-23 15:51:57 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/5691.html
+2018-07-23 15:51:57 [root] INFO: name: 城隍庙旅游区, nameEn: The Old City God's Temple
+2018-07-23 15:51:57 [scrapy.core.scraper] ERROR: Spider error processing <GET http://you.ctrip.com/shopping/shanghai2/5691.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+Traceback (most recent call last):
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\soft\Python\workspace\spiders_data\spiders_data\spiders\ctrip_shopping.py", line 52, in restaurant_detail
+    content = dr.sub('  ', content)
+TypeError: expected string or buffer
+2018-07-23 15:51:57 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1360525.html
+2018-07-23 15:51:57 [root] INFO: name: 徐家汇, nameEn: 
+2018-07-23 15:51:57 [root] DEBUG: description: 简介
+  
+                  
+                      徐家汇云集了诸多大型商城，既有数栋百货大楼、大型的电脑数码商城，又有数百家餐饮店，因此它也是上海的四大城市副中心和十大商业中心之一。  
+  徐家汇商圈的商品档次多样化，品牌云集的港汇恒隆广场、东方商厦、太平洋百货、汇金百货、美罗城深受大众喜爱，还有以中年老年顾客喜爱的上海第六百货。电脑数码产品也是这里的一大特色，电脑市场分布密集，商品丰富，因此徐家汇也成为了上海市民常去购买电脑、数码产品的地区之一。  
+                  
+              
+交通信息
+  
+                  
+                      乘坐地铁1、9、11号线至徐家汇站，步行即可到达。  
+                  
+              
+
+2018-07-23 15:51:57 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1360525.html>
+{'category': 'shopping', 'name': u'\u5f90\u5bb6\u6c47', 'url': 'http://you.ctrip.com/shopping/shanghai2/1360525.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u5f90\u5bb6\u6c47\u4e91\u96c6\u4e86\u8bf8\u591a\u5927\u578b\u5546\u57ce\uff0c\u65e2\u6709\u6570\u680b\u767e\u8d27\u5927\u697c\u3001\u5927\u578b\u7684\u7535\u8111\u6570\u7801\u5546\u57ce\uff0c\u53c8\u6709\u6570\u767e\u5bb6\u9910\u996e\u5e97\uff0c\u56e0\u6b64\u5b83\u4e5f\u662f\u4e0a\u6d77\u7684\u56db\u5927\u57ce\u5e02\u526f\u4e2d\u5fc3\u548c\u5341\u5927\u5546\u4e1a\u4e2d\u5fc3\u4e4b\u4e00\u3002  \n  \u5f90\u5bb6\u6c47\u5546\u5708\u7684\u5546\u54c1\u6863\u6b21\u591a\u6837\u5316\uff0c\u54c1\u724c\u4e91\u96c6\u7684\u6e2f\u6c47\u6052\u9686\u5e7f\u573a\u3001\u4e1c\u65b9\u5546\u53a6\u3001\u592a\u5e73\u6d0b\u767e\u8d27\u3001\u6c47\u91d1\u767e\u8d27\u3001\u7f8e\u7f57\u57ce\u6df1\u53d7\u5927\u4f17\u559c\u7231\uff0c\u8fd8\u6709\u4ee5\u4e2d\u5e74\u8001\u5e74\u987e\u5ba2\u559c\u7231\u7684\u4e0a\u6d77\u7b2c\u516d\u767e\u8d27\u3002\u7535\u8111\u6570\u7801\u4ea7\u54c1\u4e5f\u662f\u8fd9\u91cc\u7684\u4e00\u5927\u7279\u8272\uff0c\u7535\u8111\u5e02\u573a\u5206\u5e03\u5bc6\u96c6\uff0c\u5546\u54c1\u4e30\u5bcc\uff0c\u56e0\u6b64\u5f90\u5bb6\u6c47\u4e5f\u6210\u4e3a\u4e86\u4e0a\u6d77\u5e02\u6c11\u5e38\u53bb\u8d2d\u4e70\u7535\u8111\u3001\u6570\u7801\u4ea7\u54c1\u7684\u5730\u533a\u4e4b\u4e00\u3002  \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u4e58\u5750\u5730\u94c11\u30019\u300111\u53f7\u7ebf\u81f3\u5f90\u5bb6\u6c47\u7ad9\uff0c\u6b65\u884c\u5373\u53ef\u5230\u8fbe\u3002  \r\n                  \r\n              \n'}
+2018-07-23 15:51:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/1357606.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:57 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/1357606.html
+2018-07-23 15:51:57 [root] INFO: name: 上海国金中心商场, nameEn: IFC MALL
+2018-07-23 15:51:57 [root] DEBUG: description: 简介
+  
+                  
+                      上海国金中心商场位于陆家嘴金融中心，毗邻黄浦江、东方明珠、金茂大厦、环球金融中心等热门景点。这里环境一流，配套设施豪华，是浦东新区热门购物商场之一，且有地铁二号线直达。  
+  商场国际奢侈品齐全，而且每家店面都很宽敞，橱窗摆设精致，服务员穿着统一，热情迎接每一位顾客。Louis Vuitton、Tiffany、Prada、Dior、Chanel、Coach等国际一线品牌齐全，更有一部分是首次进驻内地。这里还有上海首家Apple Store旗舰店，人气很高。下沉式的3D影院百丽宫影城，更是来这里的娱乐的另一选择。  
+                  
+              
+交通信息
+  
+                  
+                      乘坐地铁2号线至陆家嘴站，步行即可到达。  
+                  
+              
+
+2018-07-23 15:51:57 [root] INFO: destination: 中国-上海
+2018-07-23 15:51:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://you.ctrip.com/shopping/shanghai2/1357606.html>
+{'category': 'shopping', 'name': u'\u4e0a\u6d77\u56fd\u91d1\u4e2d\u5fc3\u5546\u573a', 'url': 'http://you.ctrip.com/shopping/shanghai2/1357606.html', 'destination': u'\u4e2d\u56fd-\u4e0a\u6d77', 'nameEn': u'IFC MALL', 'description': u'\u7b80\u4ecb\n  \r\n                  \r\n                      \u4e0a\u6d77\u56fd\u91d1\u4e2d\u5fc3\u5546\u573a\u4f4d\u4e8e\u9646\u5bb6\u5634\u91d1\u878d\u4e2d\u5fc3\uff0c\u6bd7\u90bb\u9ec4\u6d66\u6c5f\u3001\u4e1c\u65b9\u660e\u73e0\u3001\u91d1\u8302\u5927\u53a6\u3001\u73af\u7403\u91d1\u878d\u4e2d\u5fc3\u7b49\u70ed\u95e8\u666f\u70b9\u3002\u8fd9\u91cc\u73af\u5883\u4e00\u6d41\uff0c\u914d\u5957\u8bbe\u65bd\u8c6a\u534e\uff0c\u662f\u6d66\u4e1c\u65b0\u533a\u70ed\u95e8\u8d2d\u7269\u5546\u573a\u4e4b\u4e00\uff0c\u4e14\u6709\u5730\u94c1\u4e8c\u53f7\u7ebf\u76f4\u8fbe\u3002  \n  \u5546\u573a\u56fd\u9645\u5962\u4f88\u54c1\u9f50\u5168\uff0c\u800c\u4e14\u6bcf\u5bb6\u5e97\u9762\u90fd\u5f88\u5bbd\u655e\uff0c\u6a71\u7a97\u6446\u8bbe\u7cbe\u81f4\uff0c\u670d\u52a1\u5458\u7a7f\u7740\u7edf\u4e00\uff0c\u70ed\u60c5\u8fce\u63a5\u6bcf\u4e00\u4f4d\u987e\u5ba2\u3002Louis Vuitton\u3001Tiffany\u3001Prada\u3001Dior\u3001Chanel\u3001Coach\u7b49\u56fd\u9645\u4e00\u7ebf\u54c1\u724c\u9f50\u5168\uff0c\u66f4\u6709\u4e00\u90e8\u5206\u662f\u9996\u6b21\u8fdb\u9a7b\u5185\u5730\u3002\u8fd9\u91cc\u8fd8\u6709\u4e0a\u6d77\u9996\u5bb6Apple Store\u65d7\u8230\u5e97\uff0c\u4eba\u6c14\u5f88\u9ad8\u3002\u4e0b\u6c89\u5f0f\u76843D\u5f71\u9662\u767e\u4e3d\u5bab\u5f71\u57ce\uff0c\u66f4\u662f\u6765\u8fd9\u91cc\u7684\u5a31\u4e50\u7684\u53e6\u4e00\u9009\u62e9\u3002  \r\n                  \r\n              \n\u4ea4\u901a\u4fe1\u606f\n  \r\n                  \r\n                      \u4e58\u5750\u5730\u94c12\u53f7\u7ebf\u81f3\u9646\u5bb6\u5634\u7ad9\uff0c\u6b65\u884c\u5373\u53ef\u5230\u8fbe\u3002  \r\n                  \r\n              \n'}
+2018-07-23 15:51:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://you.ctrip.com/shopping/shanghai2/48434.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+2018-07-23 15:51:57 [root] INFO: Ctrip goods detail url:  http://you.ctrip.com/shopping/shanghai2/48434.html
+2018-07-23 15:51:57 [root] INFO: name: 淮海路商业街, nameEn: 
+2018-07-23 15:51:57 [scrapy.core.scraper] ERROR: Spider error processing <GET http://you.ctrip.com/shopping/shanghai2/48434.html> (referer: http://you.ctrip.com/shoppinglist/shanghai2.html)
+Traceback (most recent call last):
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "d:\soft\python\python2.7\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\soft\Python\workspace\spiders_data\spiders_data\spiders\ctrip_shopping.py", line 52, in restaurant_detail
+    content = dr.sub('  ', content)
+TypeError: expected string or buffer
+2018-07-23 15:51:57 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-07-23 15:51:57 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7102,
+ 'downloader/request_count': 19,
+ 'downloader/request_method_count/GET': 19,
+ 'downloader/response_bytes': 673764,
+ 'downloader/response_count': 19,
+ 'downloader/response_status_count/200': 19,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 7, 23, 7, 51, 57, 534000),
+ 'item_scraped_count': 12,
+ 'log_count/DEBUG': 44,
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 53,
+ 'request_depth_max': 3,
+ 'response_received_count': 19,
+ 'scheduler/dequeued': 18,
+ 'scheduler/dequeued/memory': 18,
+ 'scheduler/enqueued': 18,
+ 'scheduler/enqueued/memory': 18,
+ 'spider_exceptions/TypeError': 3,
+ 'start_time': datetime.datetime(2018, 7, 23, 7, 49, 0, 315000)}
+2018-07-23 15:51:57 [scrapy.core.engine] INFO: Spider closed (finished)
